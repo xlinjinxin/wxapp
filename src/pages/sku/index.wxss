@@ -1,0 +1,100 @@
+.addToCart {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    bottom: 120rpx;
+    text-align: center;
+    overflow: hidden;
+    font-size: 25rpx
+}
+
+.hid {
+    width: 100%;
+    height: 20%;
+}
+
+.cartBody {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: 0rpx;
+    background-color: white
+}
+
+.details {
+    width: 100%;
+    height: 48%;
+}
+
+.detailLeft {
+    width: 48%;
+    height: 100%;
+    float: left;
+}
+
+.detailLeft img {
+    width: 100%;
+    height: 100%
+}
+
+.detailRight {
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+    float: right;
+    text-align: center;
+    padding-top: 130rpx;
+}
+
+.size4 {
+    font-size: 35rpx
+}
+
+.propbox {
+    width: 100%;
+    height: 480rpx;
+    font-size: 32rpx;
+    overflow: hidden;
+}
+
+
+
+.prop1 {
+    color: rgba(190, 186, 184, 0.863);
+    width: 100%;
+    height: 60rpx;
+    line-height: 60rpx;
+    text-align: left
+}
+
+.prop2 {
+    display: flex;
+    font-size: 25rpx;
+    height: auto;
+
+    flex-wrap: wrap;
+    justify-content: flex-start
+}
+
+.prop2-item {
+    line-height: 60rpx;
+    height: 60rpx;
+
+    background-color: rgba(116, 131, 143, 0.842);
+    color: #fff;
+    margin: 15rpx;
+    overflow: hidden;
+    text-align: center
+}
+
+.choice {
+    border: 1px solid black;
+    box-sizing: border-box;
+    color: rgb(53, 134, 73)
+}
+
+.disabled {
+
+    background-color: rgb(206, 201, 201)
+}

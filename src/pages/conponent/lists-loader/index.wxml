@@ -1,0 +1,28 @@
+<view class="listsLoader">
+  <view class="listsHead">
+    <view
+      class="move"
+      style="left:{{ movePoint }}rpx;width:{{ moveWidth }}rpx"
+    ></view>
+    <block wx:for="{{ title }}">
+      <view
+        class="title"
+        style="width: {{ tWidth }}rpx"
+        bindtap="movePoint"
+        data-index="{{ index }}"
+        >{{ item }}
+      </view>
+    </block>
+  </view>
+  <swiper class="listBody" current="{{ pageIndex }}" bindchange="changeIndex">
+    <block wx:for="{{ title }}" data-index="{{ index }}" wx:key="index">
+      <swiper-item>
+        <scroll-view
+          scroll-y="true"
+          class="scrollItem"
+          bindscrolltolower="nextPage"
+          ><slot name="loader{{ index }}"></slot> </scroll-view
+      ></swiper-item>
+    </block>
+  </swiper>
+</view>

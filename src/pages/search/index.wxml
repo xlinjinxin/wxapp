@@ -1,0 +1,41 @@
+<view class="place" hidden="{{b}}" wx:key="{{key}}">
+    <block wx:for="{{input}}">
+        <view bindtap="searchinput" data-index="{{index}}">{{item}}</view>
+    </block>
+</view>
+<view class="searchbox">
+    <view class="searchleft">
+        <icon type="search" size="15" color="" />
+    </view>
+    <view class="inputbox">
+        <input type="text" placeholder="搜索单品、分类" placeholder-class="size1" bindconfirm="gettext1" value="{{value}}"
+            bindfocus="seachplace" bindblur="serchblur" bindinput="bindinput" />
+    </view>
+    <view class="size1 searchright" bindtap="cancel" hidden="{{b}}">
+        <icon type="cancel" size="15"></icon>
+    </view>
+    <view class="backfirst" bindtap="turnback">取消</view>
+    <view class="gosearch" hidden="{{c}}" bindtap="gettext1">搜索</view>
+</view>
+<view class="hot">热门搜索</view>
+<view class="type">
+    <block wx:for="{{search1}}" wx:key="{{id}}">
+        <view class="hotkey" bindtap="hotsearch" data-name="{{item}}">
+            {{item}}
+        </view>
+    </block>
+</view>
+<view class="history" hidden="{{a}}">
+    <view class="box">
+        <view class="left">搜索记录</view>
+        <view class="right" bindtap="cancel2">
+            <image src="/image/icon_fenlei_pressed.png" class="icon"></image>
+        </view>
+    </view>
+    <block wx:for="{{texta}}" wx:for-index="index" wx:key="{{index}}">
+        <view class="box2">
+            <view class="left" data-index="{{index}}" bindtap="searchhis">{{item}}</view>
+            <view class="right" bindtap="delete" data-index="{{index}}">X</view>
+        </view>
+    </block>
+</view>

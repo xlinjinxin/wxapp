@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-sku": "../sku/index",
+    "my-nums": "../conponent/nums/index"
+  }
+}

@@ -1,0 +1,149 @@
+<view class="search">
+
+    <navigator url="/pages/search/index">
+        <icon type="search" size="14" color="white" />
+    </navigator>
+</view>
+<view class="code">
+    <view>
+        <icon type="success_no_circle" size="14" color="white" bindtap="goCalendar" />
+    </view>
+</view>
+<!-- bannar 图-->
+<view class="banner">
+    <swiper indicator-dots="{{banner.indicatorDots}}" autoplay="{{banner.autoplay}}" interval="{{banner.interval}}"
+        duration="{{banner.duration}}" circular="true">
+
+        <block wx:for="{{banner.img}}" wx:key="id">
+
+            <swiper-item>
+
+                <image src="{{item.img}}" class="slide-image" width="355" height="150" />
+
+            </swiper-item>
+
+            <swiper-item>
+
+                <image src="http://img.lexj.com/temp/b0f03714-176a-4e30-9fc4-a8ac59a6ecb7.jpg" class="slide-image" />
+
+            </swiper-item>
+
+            <swiper-item>
+
+                <image src="http://img.lexj.com/temp/b0f03714-176a-4e30-9fc4-a8ac59a6ecb7.jpg" class="slide-image"
+                    width="355" height="150" />
+
+            </swiper-item>
+
+        </block>
+
+    </swiper>
+</view>
+<view class="active-top">
+    <text>乐享家的故事</text>
+    <view class="icon">
+        >
+    </view>
+</view>
+<view class="tip">
+    每一次用心筛选的家具，只为将完美放进你的家
+</view>
+<view class="convenient-list">
+    <block wx:for="{{convenient}}" wx:key="{{id}}">
+        <view class="convenient-item">
+            <image src="{{item.img}}"></image>
+        </view>
+    </block>
+</view>
+<view class="active-top">
+    <text>本周新品</text>
+    <view class="icon">
+        >
+    </view>
+</view>
+<view class="tip">
+    每周五晚上九点发布新品
+</view>
+<scroll-view class="xinpin" scroll-x="true">
+    <view class="xinpinscroll">
+
+        <block wx:for="{{xinpin}}" wx:key="{{id}}">
+            <view class="imgbox">
+                <image src="{{item.img}}" class="img1"></image>
+                <text>{{item.title}}</text>
+            </view>
+        </block>
+
+    </view>
+</scroll-view>
+<view class="active-top">
+    <text>乐选家</text>
+    <view class="icon">
+        >
+    </view>
+</view>
+<view class="tip">
+    每周五晚上九点发布新品
+</view>
+<view class="banner1">
+    <swiper indicator-dots="{{banner1.indicatorDots}}" autoplay="{{banner1.autoplay}}" interval="{{banner1.interval}}"
+        duration="{{banner1.duration}}" circular="true">
+
+        <block wx:for="{{banner1.img}}" wx:key="id">
+
+            <swiper-item>
+
+                <image src="{{item.img}}" class="slide-image" width="355" height="150" />
+                <text>{{item.title}}</text>
+
+            </swiper-item>
+
+
+        </block>
+
+    </swiper>
+</view>
+<view class="active-top">
+    <text>限时秒杀</text>
+    <view class="icon">
+        >
+    </view>
+</view>
+<view class="timedown">
+    <view class="time">{{day}}</view>
+    <view class="time">天</view>
+    <view class="time">{{hours}}</view>
+    <view class="time">小时</view>
+    <view class="time">{{minute}}</view>
+    <view class="time">分钟</view>
+    <view class="time">{{second}}</view>
+    <view class="time">秒</view>
+</view>
+<view class="limtime">
+
+    <block wx:for="{{limtime}}" wx:key="{{id}}">
+        <view class="time-item">
+            <image src="{{item.img}}" class="img1"></image>
+
+            <text class="price">￥{{item.price}}</text>
+            <text class="oldprice">原价{{item.delPrice}}</text>
+        </view>
+    </block>
+
+</view>
+<view class="active-top">
+    <text>选你所想</text>
+
+</view>
+<list-loader id="list" bind:render="getList">
+     <view class="choicebox" >
+        <block wx:for="{{choice}}" wx:key="{{index}}">
+            <view class="choice-item">
+                <image src="{{item.img}}" class="choice-img" bindtap="entergood" data-id="{{item.id}}"></image>
+                <view class="size1">{{item.title}}</view>
+                <view class="size2">￥{{item.price}}</view>
+            </view>
+        </block>
+    </view> 
+   
+</list-loader>

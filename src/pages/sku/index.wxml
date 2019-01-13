@@ -1,0 +1,43 @@
+<view class="addToCart" hidden="{{m}}">
+    <view class="hid" bindtap="taphid">
+
+    </view>
+    <view class="cartBody">
+
+        <view class="details">
+            <view class="detailLeft">
+                <image src="{{goods.img}}" />
+            </view>
+            <view class="detailRight">
+                <view class="red size4">
+                    ￥{{goods.price}}
+                </view>
+                <view>已选择</view>
+                <view>
+                    <block wx:for="{{goods.value}}">
+                        <view>
+                            "{{item}}"
+                        </view>
+
+                    </block>
+                </view>
+
+            </view>
+        </view>
+        <scroll-view class="propbox" scroll-y>
+            <block wx:for="{{goods.dimensions}}" wx:for-item="item" wx:for-index="index">
+                <view class="prop1">{{item.name}}</view>
+                <view class="prop2">
+                    <block wx:for="{{item.choice}}" wx:for-item="it" wx:for-index="idx">
+                        <view class="prop2-item {{it.checked?'choice':''}} {{it.disable?'disabled':''}}" bindtap="choiceprop"
+                            data-id="{{it.id}}" data-disable="{{it.disable}}" data-index="{{index}}" data-idx="{{idx}}">
+                            {{it.value}}
+
+                        </view>
+                    </block>
+                </view>
+            </block>
+            <my-nums bind:numEvent='getNum'></my-nums>
+        </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,47 @@
+<view class="login">
+    <view class="loginbox">
+        <image src="/image/user.jpg" class="loginicon"></image>
+    </view>
+    <view class="log">登录</view>
+</view>
+<view class="indent">
+    <view class="size1 left">我的订单</view>
+    <view class="size2 right">查看全部订单</view>
+</view>
+<view class="icon">
+    <image src="/image/icon_fenlei_normal.png" alt="" class="icon1"></image>
+    <view class="size2">待付款</view>
+</view>
+<view class="icon">
+    <image src="/image/icon_fenlei_normal.png" alt="" class="icon1"></image>
+    <view class="size2">待付款</view>
+</view>
+<view class="icon">
+    <image src="/image/icon_fenlei_normal.png" alt="" class="icon1"></image>
+    <view class="size2">待付款</view>
+</view>
+<view class="icon">
+    <image src="/image/icon_fenlei_normal.png" alt="" class="icon1"></image>
+    <view class="size2">待付款</view>
+</view>
+<view class="mode">
+    <view class="size1 left center">我的预约</view>
+    <view class="size1 right center">></view>
+</view>
+<view class="mode">
+    <view class="size1 left center">优惠券</view>
+    <view class="size1 right center">></view>
+</view>
+<view class="mode">
+    <view class="size1 left center">收藏夹</view>
+    <view class="size1 right center">></view>
+</view>
+<view class="mode" bindtap="sumbitInformation">
+    <view class="size1 left center">管理收货地址</view>
+    <view class="size1 right center">></view>
+</view>
+<view class="indent">
+    <view class="size1 left center">联系客服</view>
+    <view class="size1 right center">></view>
+    <view class="size2 right center">服务时间9:00-22:00</view>
+</view>

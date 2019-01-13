@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "线下体验",
+  "usingComponents": {
+    "listsLoader": "../../conponent/lists-loader/index"
+  }
+}

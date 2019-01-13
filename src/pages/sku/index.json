@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "my-nums": "../conponent/nums/index"
+  }
+}

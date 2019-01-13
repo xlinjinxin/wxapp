@@ -1,0 +1,81 @@
+<my-sku id='sku'/>
+
+<view hidden="{{c}}">
+
+    <view class='banner'>
+        <icon type="success" size="16" color="black" bindtap="shareTo" />
+        <swiper circular="true">
+            <block wx:for="{{banner.img}}">
+                <swiper-item>
+                    <image src="{{item}}" class="slide-image" />
+                </swiper-item>
+            </block>
+        </swiper>
+    </view>
+    <view class="banner1">
+        <view class="left">{{banner.title}}</view>
+        <view class="left red size2">￥{{banner.price}}</view>
+        <view class="left green size1">{{banner.remarkCateName}}</view>
+    </view>
+    <view class="instructions">
+        <view class="instr">
+            <icon type="success icon1" size="12" />大厂直供
+        </view>
+        <view class="instr">
+            <icon type="success icon1" size="12" />健康保障
+        </view>
+        <view class="instr">
+            <icon type="success icon1" size="12" />7天无理由退换
+        </view>
+        <view class="instr">
+            <icon type="success icon1" size="12" />大厂直供
+        </view>
+    </view>
+    <view class="goodsi ">
+        <view class="fleft size3">产品规格</view>
+        <view class="fright size1">{{goods.value}}</view>
+    </view>
+    <view class="parameter {{a?'height':''}}">
+        <view class="line ">
+            <view class="fleft size3">产品参数</view>
+            <view class="fright size1 " bindtap="parall">更多参数 ></view>
+        </view>
+        <view>
+            <block wx:for="{{banner.param}}">
+                <view class="para">
+                    {{item.key}}:{{item.value}}
+                </view>
+            </block>
+        </view>
+    </view>
+    <view class="goodsin ">
+        <view class="fleft size3">产品详情</view>
+    </view>
+    <view class="goodscontain">
+        <block wx:for="{{banner.intro}}">
+            <image src="{{item[0].content}}" bindtap="magnify" data-index="{{index}}" />
+        </block>
+    </view>
+    <view class="table">
+        <view class="icon1">
+            <view class="image1">
+                <image src="/image/shoucang.png" />
+            </view>
+            <view class="image1">
+                <image src="/image/icon_gouwuche_pressed.png" />
+            </view>
+            <view class="image1">
+                <image src="/image/partner-bannar.png" />
+            </view>
+        </view>
+        <view class="addcart" bindtap="tapbuy">
+            加入购物车
+        </view>
+        <view class="addcart style1" bindtap="tapbuy">
+            立即购买
+        </view>
+    </view>
+</view>
+<view class="magnifyPic" hidden="{{b}}">
+    <image src="{{banner.intro[index][0].content}}" bindtap="turn1" />
+</view>

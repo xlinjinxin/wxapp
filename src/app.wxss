@@ -1,0 +1,28 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}
+
+.size1 {
+  font-size: 30rpx;
+  text-align: left
+}
+
+.size2 {
+  font-size: 30rpx;
+  color: rgb(209, 87, 98);
+  text-align: left
+}
+
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent
+}

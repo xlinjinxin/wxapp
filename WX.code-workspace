@@ -1,0 +1,16 @@
+{
+  "folders": [
+    {
+      "path": "wxapp"
+    },
+    {
+      "path": "E:\\test-min-program"
+    }
+  ],
+  "settings": {
+    "files.associations": {
+      "*.wxss": "css",
+      "*.wxml": "html"
+    }
+  }
+}

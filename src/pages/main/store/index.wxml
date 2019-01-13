@@ -1,0 +1,9 @@
+<listsLoader id="listsLoader" bind:render="renderLists">
+  <block wx:for="{{ lists }}" wx:key="index">
+    <view slot="loader{{ index }}" class="loader">
+      <block wx:for="{{ lists[index] }}">
+        <view class=""><image src="{{ item.img }}"></image></view>
+      </block>
+    </view>
+  </block>
+</listsLoader>

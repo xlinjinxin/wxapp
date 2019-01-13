@@ -1,0 +1,69 @@
+<view class="cart">
+    <image src="/image/icon_gouwuche_normal.png" class="shop"></image>
+    <view class="type1">暂时没有商品</view>
+    <view class="type2">快去看看给家里添置些什么~</view>
+    <view class="box" bindtap="goShopping">去逛逛</view>
+</view>
+<view class="clearing">
+    <view class="clearing-top">
+        <view class="count">
+            共 件
+        </view>
+        <view class="func">
+            <view class="func1">
+                加清单
+            </view>
+            <view class="func1">
+                分享
+            </view>
+            <view class="func1">
+                管理
+            </view>
+        </view>
+    </view>
+    <view class='flex'>
+        <block wx:for="{{selectedp}}">
+            <view class='select'>
+                <view class='border {{item.checked?"white":""}} ' bindtap="handleTap" data-index="{{index}}" data-skuId="{{item.skuId}}">
+
+
+                    <icon type="success_no_circle" size="11" color="white" />
+                </view>
+            </view>
+            <view class='item'>
+
+                <image src="{{item.img}}" />
+                <view class='left1'>
+
+
+                    <view class='left'>{{item.tips}}</view>
+                    <view class='left red'>￥{{item.price}}</view>
+                </view>
+                <view class='num'>
+                    共{{num[num.length-1-index]}}件
+                </view>
+            </view>
+        </block>
+
+    </view>
+    <view>
+
+    </view>
+</view>
+<view class='manage'>
+    <view class='manage-left'>
+
+        <view class='border posi'>
+
+
+            <icon type="success_no_circle" size="11" color="white" />
+        </view>
+        全选
+    </view>
+    <view class="manage-right">
+        <view class="manage-right2 {{a?'delete':''}}" bindtap="deleteTap">
+            删除
+        </view>
+
+    </view>
+</view>

@@ -1,0 +1,68 @@
+{
+  "pages": [
+    "pages/main/index/index",
+    "pages/main/category/index",
+    "pages/main/store/index",
+    "pages/main/cart/index",
+    "pages/main/my/index",
+
+    "pages/search/index",
+
+    "pages/commodity/index",
+
+    "pages/goods/index",
+
+    "pages/calendar/index",
+
+    "pages/userInformation/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "乐享家",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": "0rpx"
+  },
+  "usingComponents": {
+    "list-loader": "pages/conponent/list-loader/index"
+  },
+  "tabBar": {
+    "color": "#7f8389",
+    "selectedColor": "#27ada2",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/main/index/index",
+        "text": "首页",
+        "iconPath": "image/icon_shouye_normal.png",
+        "selectedIconPath": "image/icon_shouye_pressed.png"
+      },
+      {
+        "pagePath": "pages/main/category/index",
+        "text": "分类",
+        "iconPath": "image/icon_fenlei_normal.png",
+        "selectedIconPath": "image/icon_fenlei_pressed.png"
+      },
+      {
+        "pagePath": "pages/main/store/index",
+        "text": "线下体验",
+        "iconPath": "image/icon_lexiangjia_normal.png",
+        "selectedIconPath": "image/icon_lexiangjia_pressed.png"
+      },
+      {
+        "pagePath": "pages/main/cart/index",
+        "text": "购物车",
+        "iconPath": "image/icon_gouwuche_normal.png",
+        "selectedIconPath": "image/icon_gouwuche_pressed.png"
+      },
+      {
+        "pagePath": "pages/main/my/index",
+        "text": "我的",
+        "iconPath": "image/icon_wo_normal.png",
+        "selectedIconPath": "image/icon_wo_pressed.png"
+      }
+    ]
+  }
+}

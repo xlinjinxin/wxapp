@@ -1,0 +1,208 @@
+.search {
+  position: absolute;
+  top: 38rpx;
+  right: 39rpx;
+  background-color: rgb(179, 170, 170);
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.search icon,
+.code icon {
+  position: absolute;
+  right: 14rpx;
+  top: 16rpx;
+}
+
+.code {
+  position: absolute;
+  top: 38rpx;
+  right: 119rpx;
+  background-color: rgb(179, 170, 170);
+  display: inline-block;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+swiper {
+  width: 100%;
+  height: 660rpx;
+}
+
+swiper-item {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.active-top {
+  width: 100%;
+  height: 30rpx;
+  font-size: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+  color: rgb(158, 168, 168);
+  margin-top: 30rpx;
+}
+
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+  color: rgb(158, 168, 168);
+  border: 2rpx rgb(158, 168, 168) solid;
+  border-radius: 50%;
+  z-index: 3;
+  left: 14rpx;
+}
+
+.tip {
+  width: 100%;
+  height: 24rpx;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  color: rgb(158, 168, 168);
+  text-align: center;
+  margin-top: 30rpx;
+}
+
+.convenient-list {
+  width: 100%;
+  min-height: 188rpx;
+  margin-top: 30rpx;
+}
+
+.convenient-item {
+  display: inline-block;
+  width: 164rpx;
+  height: 164rpx;
+  margin-right: 10rpx;
+  margin-left: 10rpx
+}
+
+.convenient-item image {
+  width: 164rpx;
+  height: 164rpx;
+
+
+}
+
+.xinpinscroll {
+
+  width: 1650rpx;
+  height: 550rpx;
+}
+
+.xinpin {
+  width: 720rpx;
+  height: 460rpx;
+  overflow: hidden;
+
+}
+
+.img1 {
+  width: 330rpx;
+  height: 330rpx;
+}
+
+.xinpin text {
+  position: relative;
+  font-size: 12px;
+}
+
+.imgbox {
+  width: 330rpx;
+  height: 330rpx;
+  display: inline-block;
+}
+
+.limtime {
+  height: auto;
+  width: 100%;
+}
+
+.time-item {
+  width: 100%;
+  height: 330rpx;
+}
+
+.img1 {
+  width: 330rpx;
+  height: 330rpx;
+}
+
+.price {
+  position: relative;
+  bottom: 242rpx;
+  left: 138rpx
+}
+
+.oldprice {
+  position: relative;
+  bottom: 184rpx;
+  left: 13rpx;
+  font-size: 30rpx;
+  text-decoration: line-through
+}
+
+.choicebox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.choice-item {
+  width: 42%;
+  height: 430rpx;
+
+
+}
+
+.choice-img {
+  width: 100%;
+  height: 300rpx
+}
+
+.timedown {
+  width: 100%;
+  height: 50rpx;
+}
+
+.time {
+  display: inline-block;
+  text-align: center;
+  font-size: 25rpx;
+  width: 10%;
+  height: 40rpx;
+  line-height: 40rpx
+}
+
+view {
+  text-align: center
+}
+
+.size1 {
+  font-size: 30rpx;
+  text-align: left
+}
+
+.size2 {
+  font-size: 30rpx;
+  color: rgb(209, 87, 98);
+  text-align: left
+}
+
+image {
+  width: 100%;
+  height: 80%;
+}

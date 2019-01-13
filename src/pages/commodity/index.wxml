@@ -1,0 +1,85 @@
+<view class="searchtype">
+    <view class="searchtypebox {{b?'':'active'}}" bindtap="tapN1">排序<view class="triangle"></view>
+        <view class="triangle1box" hidden="{{b}}">
+            <view class="triangle1"></view>
+        </view>
+    </view>
+    <view class="searchtypebox {{a?'':'active'}}" bindtap="tapN">现代简约<view class="triangle"></view>
+        <view class="triangle1box" hidden="{{a}}">
+            <view class="triangle1"></view>
+        </view>
+    </view>
+    <view class="searchtypebox {{g?'':'active'}}" bindtap="hotchoice">人气优选
+    </view>
+    <view class="searchtypebox {{e?'':'active'}}" bindtap="filterpage">筛选
+    </view>
+</view>
+<view class="shopbox">
+    <block wx:for="{{shoppingBox}}">
+        <view class="imgBox">
+
+            <image src="{{item.img}}" class="fliterImg" bindtap="jump" data-id="{{item.id}}" />
+            <view class="size">
+                {{item.title}}
+            </view>
+            <view class="size red">
+                ￥{{item.price}}
+            </view>
+        </view>
+    </block>
+</view>
+<view class="else " hidden="{{b}}">
+    <view class="elsetop">
+        <block wx:for="{{filter.type.list}}">
+            <view class="list" data-tid="{{item.tid}}" bindtap="arrange">{{item.name}}</view>
+        </block>
+    </view>
+    <view class="transparent" hidden="{{b}}"></view>
+</view>
+<view class="else" hidden="{{a}}">
+    <scroll-view class="elsetop1" scroll-y="true">
+        <block wx:for="{{filter.style.list}}">
+            <view class="list" bindtap="shopfilter" data-name="{{item.name}}">{{item.name}}</view>
+        </block>
+    </scroll-view>
+    <view class="transparent" hidden="{{a}}"></view>
+</view>
+<view hidden="{{e}}" class="place">
+    <view class="filterboxleft" bindtap="taphid"></view>
+    <view class="filterboxright">
+        <scroll-view class="filterbox" scroll-y="true">
+            <view>材质</view>
+            <view class="filtertype" id="{{d?'height':''}}">
+                <block wx:for="{{filter.style.category}}">
+                    <view class="filters {{item.checked?'bordergreen':''}}" data-mid="{{item.mid}}" data-index="{{index}}"
+                        bindtap="greenborder">{{item.name}}
+                    </view>
+                </block>
+            </view>
+            <view>
+                <view class="more" bindtap="more">更多</view>
+            </view>
+            <view class="price">价格区间</view>
+            <view class="inputview">
+                <input class="inputmin" type="number" placeholder="最低价" value="{{min}}" bindinput="inputmin" />
+            </view>
+            <view class="one">一</view>
+            <view class="inputview1">
+                <input class="inputmin" type="number" placeholder="最高价" value="{{max}}" bindinput="inputmax" />
+            </view>
+            <view>品牌</view>
+            <view class="brandbox">
+                <block wx:for="{{brand}}">
+                    <view class="filters {{item.checked?'bordergreen':''}}" bindtap="greenborder1" data-mid="{{item.mid}}"
+                        data-index="{{index}}">{{item.name}}</view>
+                </block>
+            </view>
+
+
+        </scroll-view>
+        <view class="right-end">
+            <view class="reset" bindtap="reseted">重置</view>
+            <view class="comfirm" bindtap="comfirmfilter">确定</view>
+        </view>
+    </view>
+</view>

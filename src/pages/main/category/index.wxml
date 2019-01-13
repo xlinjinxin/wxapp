@@ -1,0 +1,27 @@
+<view class="search" bindtap="goShopping">
+    <icon type="search" color="#b2b2b2" size="12"></icon>
+    <text>搜索单品、分类</text>
+</view>
+<view class="category">
+    <view class="category-left">
+        <block wx:for="{{category1}}" wx:key="{{id}}" wx:for-item="item" wx:for-index="index">
+            <view class="type active {{index==nowindex?'green':''}}" bindtap="tapName" data-index="{{index}}">{{item.name}}</view>
+        </block>
+
+        <!-- <view wx:for="{{list}}">
+            {{item+index}}
+            <view wx:for="{{item.list}}" wx:for-item="it" wx:for-index="idx">
+                {{item.id}}
+                {{it}}
+            </view>
+        </view> -->
+    </view>
+
+</view>
+<scroll-view class="category-right" scroll-y="true">
+
+    <block wx:for="{{category2[nowindex]}}" wx:key="{{id}}">
+        <image src='{{item.image}}' class="categoryimg" bindtap="categoryblock" data-cid="{{item.id}}"></image>
+    </block>
+
+</scroll-view>

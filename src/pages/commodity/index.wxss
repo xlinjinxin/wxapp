@@ -1,0 +1,272 @@
+.searchtype {
+  width: 100%;
+  height: 80rpx;
+  border-top: 1rpx rgb(206, 193, 193) solid;
+  border-bottom: 1rpx rgb(206, 193, 193) solid;
+  position: absolute;
+  top: 3rpx;
+}
+
+.searchtypebox {
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  position: relative;
+}
+
+.triangle {
+  width: 0rpx;
+  height: 0rpx;
+  border-style: solid;
+  border-width: 10rpx;
+  border-color: transparent transparent black transparent;
+  position: absolute;
+  top: 28rpx;
+  left: 153rpx;
+}
+
+.triangle1 {
+  width: 0rpx;
+  height: 0rpx;
+  border-style: solid;
+  border-width: 10rpx;
+  border-color: rgb(25, 131, 25) transparent transparent transparent;
+}
+
+.triangle1box {
+  width: 20rpx;
+  height: 20rpx;
+  background-color: white;
+  position: absolute;
+  top: 36rpx;
+  left: 153rpx;
+  text-align: center;
+  z-index: 3;
+}
+
+.else {
+  position: absolute;
+  width: 100%;
+  height: 91%;
+  z-index: 2;
+
+  top: 99rpx;
+}
+
+.elsetop {
+  width: 100%;
+  height: 16%;
+  background-color: white;
+  position: absolute;
+  left: 35rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+
+.transparent {
+  width: 100%;
+  height: 84%;
+  background-color: rgba(177, 169, 169, 0.1);
+  position: absolute;
+  bottom: 0rpx;
+}
+
+.list {
+  width: 90%;
+  height: auto;
+}
+
+.list:nth-child(n + 2) {
+  border-top: 1rpx solid rgb(207, 204, 204);
+}
+
+.elsetop1 {
+  width: 100%;
+  height: 240rpx;
+  background-color: white;
+  position: absolute;
+  left: 35rpx;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.active {
+  color: rgb(25, 131, 25);
+}
+
+.filterbox {
+  width: 100%;
+  height: 100%;
+
+  z-index: 4;
+  border-top: 1rpx solid rgb(219, 208, 208);
+}
+
+.filterboxleft {
+  width: 25%;
+  height: 100%;
+  background-color: rgba(235, 226, 226, 0.911);
+  z-index: 3;
+  position: absolute;
+}
+
+.filterboxright {
+  width: 75%;
+  height: 100%;
+  background-color: white;
+  font-size: 30rpx;
+  color: rgb(194, 181, 181);
+  line-height: 75rpx;
+  position: absolute;
+  right: 0rpx;
+  z-index: 3;
+}
+
+.filtertype {
+  height: 370rpx;
+  width: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.filters {
+  margin: 15rpx 10rpx 15rpx 10rpx;
+  width: 40%;
+  height: 65rpx;
+  background-color: rgb(155, 133, 118);
+  text-align: center;
+  color: white;
+  line-height: 60rpx;
+}
+
+#height {
+  height: auto;
+}
+
+.more {
+  width: 60rpx;
+  height: 140rpx;
+  float: right;
+}
+
+.box {
+  width: 100%;
+  height: auto;
+}
+
+.more1 {
+  width: 60rpx;
+  height: 140rpx;
+}
+
+.price {
+  margin-top: 45rpx;
+}
+
+.inputview {
+  width: 200rpx;
+  height: 60rpx;
+  border: 1rpx solid rgb(206, 193, 193);
+  display: inline-block;
+  text-align: center;
+  margin-left: 30rpx;
+}
+
+.inputmin {
+  color: black;
+}
+
+.one {
+  line-height: 30rpx;
+  margin: auto 20rpx;
+  display: inline-block;
+}
+
+.inputview1 {
+  width: 200rpx;
+  height: 60rpx;
+  border: 1rpx solid rgb(206, 193, 193);
+  display: inline-block;
+  text-align: center;
+}
+
+.brandbox {
+  display: flex;
+  justify-content: center;
+}
+
+.right-end {
+  position: absolute;
+  width: 100%;
+  height: 80rpx;
+  bottom: 0rpx;
+  text-align: center;
+  line-height: 80rpx;
+  font-size: 35rpx;
+}
+
+.reset {
+  width: 50%;
+  display: inline-block;
+  color: rgb(120, 226, 120);
+  background-color: white;
+}
+
+.comfirm {
+  width: 50%;
+  display: inline-block;
+  color: white;
+  background-color: rgb(120, 226, 120);
+}
+
+.bordergreen {
+  border: 5rpx solid rgb(51, 138, 51);
+  box-sizing: border-box;
+  color: rgb(51, 138, 51);
+  overflow: hidden;
+}
+
+.shopbox {
+  width: 86%;
+  height: auto;
+  position: relative;
+  top: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 15rpx auto
+}
+
+.imgBox {
+  width: 300rpx;
+  height: 460rpx;
+
+}
+
+.fliterImg {
+  width: 280rpx;
+  height: 280rpx;
+}
+
+.size {
+  font-size: 30rpx;
+  line-height: 53rpx
+}
+
+.red {
+  color: red
+}
+
+.place {
+  position: absolute;
+  bottom: 0rpx;
+  width: 100%;
+  height: 100%;
+}

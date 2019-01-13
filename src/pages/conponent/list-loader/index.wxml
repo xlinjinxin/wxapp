@@ -1,0 +1,9 @@
+<view class="list-loader">
+  <slot></slot>
+  <view class="loading-box" hidden="{{ loading }}">
+    <view class="loading-animate">
+      <view class="loading-rotate"></view> <view class="loading-shadow"></view>
+    </view>
+    <view class="loading-text"> 加载更多… </view>
+  </view>
+</view>

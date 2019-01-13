@@ -1,0 +1,27 @@
+.numBox {
+    width: 250rpx;
+    height: 60rpx;
+    border: 1rpx solid rgb(219, 214, 214);
+    text-align: center
+}
+
+.minus {
+    float: left;
+    width: 19%;
+    height: 100%;
+    border-right: 1rpx solid rgb(219, 214, 214)
+}
+
+.num {
+    float: left;
+    width: 60%;
+    height: 100%;
+    line-height: 53rpx
+}
+
+.add {
+    float: left;
+    width: 19%;
+    height: 100%;
+    border-left: 1rpx solid rgb(219, 214, 214)
+}

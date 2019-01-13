@@ -1,0 +1,11 @@
+<view class='numBox'>
+    <view class='minus' bindtap='minusTap'>
+        -
+    </view>
+    <view class='num'>
+        {{num}}
+    </view>
+    <view class='add' bindtap="addTap">
+        +
+    </view>
+</view>
