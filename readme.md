@@ -15,3 +15,4 @@
 - 通过 `babel` 支持更丰富的 `ES6` 兼容，包括 `async/await`
 - 内置 `promise` 和 `lodash`（`lodash` 按需引入相应模块，不会全部引入）
 - 使用 `less` 编写 `.wxss` 文件，内置了一些有用的 `mixins` 和 `extends`
+..
